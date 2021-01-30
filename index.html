@@ -9,62 +9,90 @@
 <body>
     <div class="container">
         <header>
-            <h1 id="main"></h1>
-            <p id="description"></p>
+            <h1 id="main">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve platform</p>
         </header>
     </div>
        <form id="survey-form">
         <div class="form-control">
             <label for="name">Name</label>
-            <input type="text" id="name">
+            <input type="text" placeholder="Name" id="name">
         </div>
         <div class="form-control">
            
-           <label for="name">Email</label>
-           <input type="text" id="email">
+           <label for="email">Email</label>
+           <input type="text" placeholder="Email" id="email">
            <div class="form-control">
         </div>
 
-           <label for="name">Number</label>
-           <input type="number" id="number">
+           <label for="number">Age <span>(optional)</span></label>
+           <input type="number" placeholder="Age" id="number">
         <div class="form-control">
-           
-           <label for="name">Which option best describes your current role ?</label>
+            <label for="dropdown">Which option best describes your current role ?</label>
            <select name="" id="dropdown">
-               <option value=""></option>
-               <option value="">Student</option>
-               <option value="">Full Time job</option>
-               <option value="">Full time Learner</option>
-               <option value="">Prefer not to stay</option>
-               <option value="">Other</option>
+               <option selected="selected">Select current role</option>
+               <option value="2">Student</option>
+               <option value="3">Full Time job</option>
+               <option value="4">Full time Learner</option>
+               <option value="5">Prefer not to stay</option>
+               <option value="6">Other</option>
            </select>
+
         </div>
 
         <div class="form-control">
            <label for="name">Would you recommend freeCodeCamp to a friend?</label>
-          <label for="definitely"></label> <input type="radio" id="definitely">
-          <label for="maybe"></label> <input type="radio" id="maybe">
-          <label for="not-sure"></label> <input type="radio" id="not-sure">
+           <label for="definitely"></label> <input type="radio" value="definitely" id="definitely">Definitely    
+          <label for="maybe"></label> <input type="radio" value="maybe" id="maybe">Maybe
+          <label for="not-sure"></label> <input type="radio" value="not-sure" id="not-sure">Not sure
         </div>
-        <div class="form-control">
-            <label for="">What Would you like to see improved? (check all that apply) </label>
-            <input type="checkbox" id="frontend"> <label for="frontend">Front-end Projects</label>
-            <input type="checkbox" id="backend"> <label for="backend"> Back-end Projects </label>
-            <input type="checkbox" id="data-visualization"> <label for="data-visualization"> Data Visualization </label>
-            <input type="checkbox" id="challenges"> <label for="challenges">Challenges</label>
-            <input type="checkbox" id="open-source"> <label for="open-source">Open Source community</label>
-            <input type="checkbox" id="gitter-helps"> <label for="gitter-helps">Gitter helps rooms</label>
-            <input type="checkbox" id="videos"> <label for="videos"> Videos</label>
-            <input type="checkbox" id="meetups"> <label for="meetups">City Meetups</label>
-            <input type="checkbox" id="wiki"> <label for="wiki">Wiki</label>
-            <input type="checkbox" id="forum"> <label for="forum">Forum</label>
-            <input type="checkbox" id="additional"> <label for="additional">Additional Courses</label>
+        <div class="form-control" style="margin: 10px">
+            <label for="" >What Would you like to see improved? <br>  </label>
+            <span style=" display: block;text-align: center; width: 50%; font-weight: 100; font-style: italic; margin: 10px;">(check all that apply)</span>
+            <div class="checkbox-control">
+                <input type="checkbox" id="frontend"> <label for="frontend" style="display: inline;"> Front-end Projects </label> 
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="backend"> <label for="backend" style="display: inline;"> Back-end Projects </label>
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="data-visualization"> 
+            <label for="data-visualization" style="display: inline;"> Data Visualization </label>
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="challenges"> <label for="challenges" style="display: inline;">Challenges</label>
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="open-source"> <label for="open-source" style="display: inline;">Open Source community</label>
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="gitter-helps"> <label for="gitter-helps" style="display: inline;">Gitter helps rooms</label>
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="videos"> <label for="videos" style="display: inline;"> Videos</label>
+             </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="meetups"> <label for="meetups" style="display: inline;">City Meetups</label>
+            </div>
+            <div class="checkbox-control">
+            <input type="checkbox" id="wiki"> <label for="wiki" style="display: inline;">Wiki</label>
+            </div>
+             
+            <div class="checkbox-control">
+            <input type="checkbox" id="forum"> <label for="forum" style="display: inline;">Forum</label>
+            </div>
+              
+            <div class="checkbox-control">
+            <input type="checkbox" id="additional"> <label for="additional" style="display: inline;">Additional Courses</label>
+            </div>
+            
+            
 
         </div>
         <div class="form-control">
-            <label for="">Any comments or suggestions?</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
-            <button>Submit</button>
+            <label for="textarea">Any comments or suggestions?</label>
+            <textarea name="" id="textarea" id="textarea" cols="20" rows="5" placeholder="Enter your comment here"></textarea>
+            <button type="button" class="btn">Submit</button>
         </div>
   </form>
 </body>

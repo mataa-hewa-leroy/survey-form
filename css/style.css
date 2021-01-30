@@ -1,0 +1,166 @@
+* {
+  color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+
+}
+input[type="text"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    width: 100%;
+    text-align: left; 
+    align-content: center;
+    height: 100%;
+    
+} 
+body {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg)
+}
+header {
+    display: block;
+    text-align: center;
+    margin: 35px;
+}
+header h1 {
+line-height: 2;
+font-size: 1.8rem;
+
+}
+header p {
+font-style: oblique;
+font-weight: 100;
+font-size: 0.9rem;
+
+width: 100%;
+}
+
+#survey-form {
+margin: 10px;
+/* border: 3px solid black; */
+background-color: rgba(27, 27, 50, 0.8);
+width: 50%;
+margin: 50px auto;
+padding: 40px;
+/* text-align: center; */
+}
+
+label {
+    display: flex;
+    padding: 7px 0;
+    
+}
+input {
+    width: 100%;
+    padding-bottom: 17px  ;
+    border-radius: 6px;
+    margin-bottom: 19px;
+    
+}
+textarea {
+    width: 100%;
+    padding-bottom: 20px  ;
+    border-radius: 6px;
+}
+button {
+    border-radius: 6px;
+
+}
+#definitely, 
+    #maybe,
+    #not-sure {
+  /* text-align: left; */
+  width: 40px;
+  height: 18px;
+  color: black;
+  padding: 0px;
+  margin:0px;
+
+}
+#dropdown {
+
+}
+select {
+    width: 100%;
+    padding-bottom: 17px  ;
+    border-radius: 6px;
+    background-color: #ffffff;
+    /* padding: 15px 0; */
+}
+select option {
+    color: black;
+
+}
+.form-control {
+    width: 100%;
+    /* border: 1px solid #ced4da; */
+    border-radius:  0.25;
+}
+ input[type=checkbox]   {
+    display: inline;
+    width: 40px;
+    height: 20px;
+}
+#frontend label {
+    /* display: inline; */
+}
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height:60px;
+    background-color:#37AF65;
+    
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+@media  (min-width: 0px) and (max-width: 800px) {
+    #survey-form {
+        margin: 10px;
+        /* border: 3px solid black; */
+        background-color: rgba(27, 27, 50, 0.8);
+        width: 100%;
+        margin: 50px auto;
+        padding: 40px;
+        /* text-align: center; */
+        }
+}
+
+
+@media screen and (min-width: 800px) {
+    #survey-form {
+        margin: 10px;
+        /* border: 3px solid black; */
+        background-color: rgba(27, 27, 50, 0.8);
+        width: 80%;
+        margin: 50px auto;
+        padding: 40px;
+        /* text-align: center; */
+        }
+}
+@media  (min-width: 800px) and (max-width: 1800px) {
+    #survey-form {
+        margin: 10px;
+        /* border: 3px solid black; */
+        background-color: rgba(27, 27, 50, 0.8);
+        width: 50%;
+        margin: 50px auto;
+        padding: 40px;
+        /* text-align: center; */
+        }
+}
